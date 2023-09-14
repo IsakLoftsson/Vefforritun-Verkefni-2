@@ -8,15 +8,20 @@
     <meta property="og:description"content="Veitingarstaður Ísaks">
     <meta property="og:image"content="myndir/sharing.jpg">
     <title>Réttir</title>
+    <link rel="stylesheet" href="rettir.css">
 </head>
+
 <body>
     <header>
     <h1>Réttir</h1>
-    <a href="#matsedill">Matseðill</a>
+    <p><a class="sr-only" href="#matsedill">Matseðill</a> </p>
     <nav>
+        <ul>
         <li><a href="../index.html">Heim</a></li>
         <li><a href="um.html">Um okkur</a></li>
+        <li><strong>Réttir</strong></li>
         <li><a href="pontun.html">Pöntun</a></li>
+    </ul>
     </header>
 
     <main id="matsedill">
@@ -86,19 +91,32 @@
     </main>
 
     <footer>
-        <h3>Opnunartími</h3>
-            <p>Mánudaga til fimmtudaga 09:00–18:00<br>
-            Föstudaga 10:00–22:00<br>
-            Laugardaga 11:00–22:00<br>
-            Sunnudaga Lokað</p>
-        <h2>Staðsetning</h2>
-        <dl>
-            <dt>Veitingastaður Ísaks</dt>
-            <dt>Dúfnahólar 10</dt>
-            <dt>111 Reykjavík</dt>
-            <dt>Efstahæð</dt>
-            <dt><a href="mailto:veitingastadurIsaks@outlook.com">veitingastaðurÍsak@outlook.com</a></dt>
-        </dl>
+        <div class="content">
+            <div class="box">
+                <h2>Opnunartími</h2>
+            <dl>
+                <dt>Mánudaga til fimmtudaga</dt>
+                <dd>09:00–18:00</dd>
+                <dt>Föstudaga</dt>
+                <dd>10:00–22:00</dd>
+                <dt>Laugardaga</dt>
+                <dd>11:00–22:00</dd>
+                <dt>Sunnudaga</dt>
+                <dd>Lokað</dd>
+            </dl>
+            </div>
+            <div class="box">
+                <h2>Hér erum við</h2>
+            <dl>
+                <li>Veitingastaðurinn ehf.</li>
+                <li>Aðalgata 10</li>
+                <li>100 Reykjavík</li>
+                <li><a href="tel:3334567">Sími 333-4567</a></li>
+                <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+                </li>
+            </dl>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

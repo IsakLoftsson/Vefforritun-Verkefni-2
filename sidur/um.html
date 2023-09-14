@@ -8,6 +8,7 @@
     <meta property="og:description"content="Veitingarstaður Ísaks">
     <meta property="og:image"content="myndir/sharing.jpg">
     <title>Um okkur</title>
+    <link rel="stylesheet" href="um.css">
 </head>
 <body>
     <header>
@@ -15,53 +16,80 @@
         <p>
             Við erum búin að elda mat fyrir fólk síðan 2001.
         </p>
-        <a href="#saga">Sagan</a>
+        <p><a class="sr-only" href="#saga">Sagan</a> </p>
+    
         <nav>
+            <ul>
             <li><a href="../index.html">Heim</a></li>
+            <li><strong>Um okkur</strong></li>
             <li><a href="rettir.html">Réttir</a></li>
             <li><a href="pontun.html">Pöntun</a></li>
+            </ul>
     </header>
 
     <main id="saga">
+        <div class="content">
+            <section>
+                <h2>Sagan</h2>
+                <p>Við byrjuðum að elda árið 2001 og höfum ekki hætt síðan<br>
+                Við elskum að elda og þráum að fleiri fái að upplifa matargerð okkar.<br>
+                Við erum stöðugt að bæta við okkur fólki og þekkingu.<br>
+                Þetta er draumur að rætast.</p>
+            </section>
+        </div>
         <section>
-            <h2>Sagan</h2>
-            <p>Við byrjuðum að elda árið 2001 og höfum ekki hætt síðan<br>
-            Við elskum að elda og þráum að fleiri fái að upplifa matargerð okkar.<br>
-            Við erum stöðugt að bæta við okkur fólki og þekkingu.<br>
-            Þetta er draumur að rætast.</p>
-        </section>
-        <section>
-            <h2>Starfsfólk</h2>
-            <h3>Anna Jónsdóttir</h3>
-            <img src="../myndir/anna.jpg" width="400" alt="Mynd af Önnu Jónsdóttir" />
-            <p>Eigandi.</p>
-            <h3>Adam Adamsson</h3>
-            <img src="../myndir/adam.jpg" width="400" alt="Mynd af Adami Adamssyni" />
-            <p>Rekstrarstjóri</p>
-            <h3>Benni</h3>
-            <img src="../myndir/benni.jpg" width="400" alt="Mynd af Benna Kokki" />
-            <p>Kokkur</p>
-            <h3>Birna</h3>
-            <img src="../myndir/birna.jpg" width="400" alt="Mynd af Birnu Kokki" />
-            <p>Kokkur</p>
+            <div class="content">
+                <h2>Starfsfólk</h2>
+                <div class="box">
+                <h3>Anna Jónsdóttir</h3>
+                <img src="../myndir/anna.jpg" width="400" alt="Mynd af Önnu Jónsdóttir" />
+                <p>Eigandi.</p>
+                </div>
+                <div class="box">
+                <h3>Adam Adamsson</h3>
+                <img src="../myndir/adam.jpg" width="400" alt="Mynd af Adami Adamssyni" />
+                <p>Rekstrarstjóri</p>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Benni</h3>
+                <img src="../myndir/benni.jpg" width="400" alt="Mynd af Benna Kokki" />
+                <p>Kokkur</p>
+                <h3>Birna</h3>
+                <img src="../myndir/birna.jpg" width="400" alt="Mynd af Birnu Kokki" />
+                <p>Kokkur</p>
+            </div>
         </section>
         <nav><a href="../index.html">Aftur á forsíðu</a></nav>
     </main>
 
     <footer>
-        <h3>Opnunartími</h3>
-            <p>Mánudaga til fimmtudaga 09:00–18:00<br>
-            Föstudaga 10:00–22:00<br>
-            Laugardaga 11:00–22:00<br>
-            Sunnudaga Lokað</p>
-        <h2>Staðsetning</h2>
-        <dl>
-            <dt>Veitingastaður Ísaks</dt>
-            <dt>Dúfnahólar 10</dt>
-            <dt>111 Reykjavík</dt>
-            <dt>Efstahæð</dt>
-            <dt><a href="mailto:veitingastadurIsaks@outlook.com">veitingastaðurÍsak@outlook.com</a></dt>
-        </dl>
+        <div class="content">
+            <div class="box">
+                <h2>Opnunartími</h2>
+            <dl>
+                <dt>Mánudaga til fimmtudaga</dt>
+                <dd>09:00–18:00</dd>
+                <dt>Föstudaga</dt>
+                <dd>10:00–22:00</dd>
+                <dt>Laugardaga</dt>
+                <dd>11:00–22:00</dd>
+                <dt>Sunnudaga</dt>
+                <dd>Lokað</dd>
+            </dl>
+            </div>
+            <div class="box">
+                <h2>Hér erum við</h2>
+            <dl>
+                <li>Veitingastaðurinn ehf.</li>
+                <li>Aðalgata 10</li>
+                <li>100 Reykjavík</li>
+                <li><a href="tel:3334567">Sími 333-4567</a></li>
+                <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+                </li>
+            </dl>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

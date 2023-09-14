@@ -5,12 +5,10 @@
     margin: 0;
     padding: 0;
   }
+  
   /* Reiknum stærð á öllum boxum sem border-box */
   html {
     box-sizing: border-box;
-    font-family: 'Lora', serif;
-    font-size: 16px;
-    
   }
   /* og látum erfast á allt */
   *,
@@ -30,71 +28,110 @@
     width: 1px;
   }
 
-  header {
+  html{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+  }
+
+  header{
     display: block;
-    text-align: center;
-    color: #ffe7ae;
-    background-color: #2f0505;
-    border-bottom: 10px solid;
-    border-bottom-color: #ffe7ae; 
-  }
-  nav {
     padding: 1rem;
-    background-color: #fff9ee;
-    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #2f0505;
+    border-bottom: 8px solid #ffe7ae;
+    color: beige;
+
   }
+
+  nav{
+    display: block;
+    background-color: #fff9ee;
+    padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
   nav ul{
     text-align: center;
   }
-  nav ul li {
+
+  nav ul li{
     display: inline;
     padding-right: 1rem;
   }
 
   nav ul li:last-child{
-    padding-right: 0rem;
+    padding-right: 0;
   }
 
   main{
-    padding: 1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 900px;
-    min-height: 60vh;
+    margin-bottom: 1rem;
   }
 
   main .content{
     margin: 0 auto;
     width: 100%;
-    max-width: 900px;
-    text-align: center;
+    padding: 0rem 2rem 0 2rem;
+    display: inline block;
+  }
+ 
+  fieldset{
+    border: 0;
+  }
+
+  input{
+    padding: 0.5rem;
+  }
+
+  main .content .box{
+    display: inline-block;
+    margin: 0 2rem 0 0;
+    border: 1px solid #ffe7ae;
+    vertical-align: top;
+    padding: 0 2rem 0 2rem;
+  }
+
+  main .content .box2{
     border-bottom: 4px solid #ffe7ae;
   }
-  main .content .box{
-    margin: 0 auto;
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    text-align: left;
-  }
-  body{
-    min-height: 100vh;
-  }
-  footer{
-    background-color:#2f0505;
-    color: #ffe7ae;
-    border-top: 10px solid;
-    border-top-color: #ffe7ae; 
 
+  footer{
+    background-color: #2f0505;
+    border-top: 8px solid #ffe7ae;
+    color: beige;
+    text-align: center;
   }
+
   footer .content{
     margin: 0 auto;
     width: 100%;
-    max-width: 900px;
+    padding: 1rem;
     text-align: center;
   }
+
   footer .content .box{
+    width: 20%;
     display: inline-block;
-    width: 30%;
     vertical-align: top;
+  }
+
+  footer ul{
+    text-align: center;
+    list-style-type: none;
+  }
+
+  footer ul li:first-child{
+    padding-top: 1rem;
+  }
+
+  footer dl{
+    text-align: center;
+  }
+
+  footer dl dt{
+    padding-top: 1rem;
+  }
+  footer dl dd:last-child{
+    padding-bottom: 1rem;
   }
