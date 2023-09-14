@@ -8,19 +8,25 @@
     <meta property="og:description"content="Veitingarstaður Ísaks">
     <meta property="og:image"content="myndir/sharing.jpg">
     <title>Pöntun</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
         <h1>Pantanir</h1>
         <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
-        <a href="#panta">Panta</a>
+        <p><a class="sr-only" href="#panta">Panta</a></p>
         <nav>
+          <ul>
             <li><a href="../index.html">Heim</a></li>
             <li><a href="um.html">Um okkur</a></li>
             <li><a href="rettir.html">Réttir</a></li>
+            <li><strong>Pöntun</strong></li>
+          </ul>
     </header>
-
+    
     <main id="panta">
+      <div class="content">
+        <div class="box">
     <h3>Panta borð</h3>
 
     <form>
@@ -36,7 +42,8 @@
       <label for="upplýsingar">Viltu taka eitthvað fram?</label>
       <input id="upplýsingar" type="text" />
     </form>
-
+  </div>
+  <div class="box">
     <h3>Panta mat</h3>
     <form>
       <label for="Réttir-val1">Réttur #N</label>
@@ -105,7 +112,11 @@
       <label for="Heimilisfang">Heimilisfang</label>
       <input id="Heimilisfang" type="text" />
     </form>
+    </div>
+    </div>
 
+    <div class="content">
+      <div class="box">
     <h3>Þínar upplýsingar</h3>
 
     <form>
@@ -122,7 +133,8 @@
       <label for="phone">Sími</label>
       <input id="phone" placeholder="581-2345" type="text" required />
     </form>
-
+    </div>
+    <div class="box">
     <h3>Samþykkja og panta</h3>
 
     <form>
@@ -133,23 +145,37 @@
     <form>
       <input type="submit" value="Panta" />
     </form>
+  </div>
     <nav><a href="../index.html">Aftur á forsíðu</a></nav>
     </main>
 
     <footer>
-        <h3>Opnunartími</h3>
-            <p>Mánudaga til fimmtudaga 09:00–18:00<br>
-            Föstudaga 10:00–22:00<br>
-            Laugardaga 11:00–22:00<br>
-            Sunnudaga Lokað</p>
-        <h2>Staðsetning</h2>
-        <dl>
-            <dt>Veitingastaður Ísaks</dt>
-            <dt>Dúfnahólar 10</dt>
-            <dt>111 Reykjavík</dt>
-            <dt>Efstahæð</dt>
-            <dt><a href="mailto:veitingastadurIsaks@outlook.com">veitingastaðurÍsak@outlook.com</a></dt>
-        </dl>
-    </footer>
+      <div class="content">
+          <div class="box">
+              <h2>Opnunartími</h2>
+          <dl>
+              <dt>Mánudaga til fimmtudaga</dt>
+              <dd>09:00–18:00</dd>
+              <dt>Föstudaga</dt>
+              <dd>10:00–22:00</dd>
+              <dt>Laugardaga</dt>
+              <dd>11:00–22:00</dd>
+              <dt>Sunnudaga</dt>
+              <dd>Lokað</dd>
+          </dl>
+          </div>
+          <div class="box">
+              <h2>Hér erum við</h2>
+          <dl>
+              <li>Veitingastaðurinn ehf.</li>
+              <li>Aðalgata 10</li>
+              <li>100 Reykjavík</li>
+              <li><a href="tel:3334567">Sími 333-4567</a></li>
+              <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+              </li>
+          </dl>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
